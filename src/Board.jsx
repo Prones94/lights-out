@@ -27,7 +27,7 @@ import "./Board.css";
  *
  **/
 
-function Board({ nrows, ncols, chanceLightStartsOn }) {
+function Board({ nrows = 5, ncols = 5, chanceLightStartsOn = 0.25 }) {
   const [board, setBoard] = useState(createBoard());
 
   function createBoard() {
@@ -88,5 +88,7 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
     </table>
   )
 }
+
+Board.default
 
 export default Board;
