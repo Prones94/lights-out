@@ -19,7 +19,7 @@ describe("Lights Out Game", () => {
 
   test("handles cell-clicking and flips cells correctly", () => {
     const { getAllByRole } = render(
-      <Board nrows={3} ncols={3} chanceLightStartsOn{0} />
+      <Board nrows={3} ncols={3} chanceLightStartsOn={0} />
     )
 
     let cells = getAllByRole("cell")
